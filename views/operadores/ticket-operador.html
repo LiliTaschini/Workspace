@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!-- Desol Icon -->
+    <link rel="shortcut icon" href="../styles/assets/iso.png" type="image/x-icon">
+    <title>Ticket-Operador</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="left">
+            <div class="active">Monitor <i class="bi bi-exclamation-circle"></i></div>
+            <div>WorkSpace</div>
+            <div>Alertas</div>
+        </div>
+        <div class="right">
+            <div><i class="bi bi-person-fill icon"></i></div>
+        </div>
+    </nav>
+    <main class="main-ticket">
+
+        <div class="content">
+            <div class="ticket">
+                <p class="title">TICKET #45000</p>
+                <p class="subject">Problema con Login Hermes</p>
+                <p class="client">SMSV</p>
+                <i class="bi bi-copy"></i>
+            </div>
+            <div class="associates">
+                <p>Asociados:</p>
+                <p>Marisel Campos</p>
+                <p>Alejandra Vainila</p>
+            </div>
+            <div class="notebook">
+                <p class="description">Descripción:</p>
+                <p>Estimados, intentamos ingresar a la plataforma, pero no funciona, dando la siguiente inscripción: No
+                    conecta la estación del agente. Adjunto capturas, cualquier consulta comunicarse al 5454135434134
+                </p>
+            </div>
+            <div class="responsible">
+                <p>Responsable:</p>
+                <p>Lilian Taschini</p>
+            </div>
+            <div class="collaborators">
+                <p>Coolaboradores:</p>
+                <p>Abril Coloa</p>
+                <p>Enzo Princippe</p>
+            </div>
+            <div class="files">
+                <div>Adjuntar archivos</div>
+                <div><i class="bi bi-paperclip"></i></div>
+            </div>
+        </div>
+
+        <div class="notes">
+            <div class="note">
+                <div class="nameOperator">
+                    <!-- o nameClient dependiendo de quien escriba -->
+                    <div class="name">Lilian Taschini</div>
+                    <div class="dateNow">2023/12/26 07:56</div> <!-- fecha en font size pequeña + hover con hs -->
+                </div>
+                <div class="descriptionNote">
+                    <div>Buenos días, ya nos encontramos revisando el caso. Apenas tengamos información al respecto lo
+                        estaremos comunicando por este medio.- </div>
+                </div>
+            </div>
+
+
+            <div class="note">
+                <div class="nameOperator">
+                    <!-- o nameClient dependiendo de quien escriba -->
+                    <div class="name">Lilian Taschini</div>
+                    <i class="bi bi-incognito"></i>
+                    <div class="dateNow">2023/12/26 07:56</div> <!-- fecha en font size pequeña + hover con hs -->
+                </div>
+                <div class="descriptionNote">
+                    <div>Se replica, se avisa a Infraestructura. </div>
+                </div>
+            </div>
+
+
+
+            <div class="note">
+                <div class="navOperator">
+                    <div class="privateNote">Nota Privada</div>
+                    <!-- botón y que cuando se clickea, vamos a poner el signo o icono de incógnito -->
+                    <div class="options">
+                        <div>Adjuntar Archivo</div> <!-- icono -->
+                        <div>Editar</div> <!-- icono -->
+                    </div>
+                </div>
+                <div class="nameOperator">
+                    <div class="name">Lilian Taschini</div>
+                </div>
+                <div class="inputsNote" id="inputsNote">
+                    <label for="">Escriba su nota</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <div>
+                        <label for="">Nota Privada</label>
+                        <input type="checkbox" name="" id="">
+                        <i class="bi bi-incognito"></i>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="sendNote">ENVIAR
+                </div>
+            </div>
+        </div>
+
+
+        <!-- notas publicas, notas privadas, adjuntos, crear, editar, borrar...
+            
+                se me ocurre que el cliente tenga un color  y nosotros otro color, para identificar rapidamente 
+                uno de otro perfil...
+
+ 
+                hacer una nota del cliente 
+               
+            
+            -->
+        </div>
+
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

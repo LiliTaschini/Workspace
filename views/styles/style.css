@@ -1,0 +1,583 @@
+/* Normalización + estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #3498db34;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* GENERAL - Autenticación */
+.mainAuth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.divLogo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  overflow: hidden;
+  height: 120px;
+  box-sizing: border-box;
+
+}
+
+.desolLogo {
+  position: absolute;
+  width: 124px;
+  height: 127px;
+  animation: animatedLogo 6s linear forwards;
+}
+
+.desol {
+  position: absolute;
+  width: 277px;
+  height: 69px;
+  animation: animatedDesol 6s linear forwards;
+}
+
+.formAuth {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.formAuth input {
+  all: unset;
+  width: 280px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 15px;
+  margin: 8px;
+}
+
+.formAuth button {
+  all: unset;
+  margin-top: 18px;
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+}
+
+.authOptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  font-size: 18px;
+  color: #2a89cc;
+}
+
+.authOptions div {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.authOptions div:hover {
+  color: #0c3653;
+}
+
+@keyframes animatedLogo {
+
+  0%,
+  50% {
+    bottom: 0;
+  }
+
+  60%,
+  100% {
+    bottom: -100%;
+  }
+}
+
+@keyframes animatedDesol {
+
+  0%,
+  50% {
+    top: -100%;
+  }
+
+  60%,
+  100% {
+    top: 25px;
+  }
+}
+
+/* GENERAL - Recover Password */
+.desolIcon {
+  margin-bottom: 20px;
+}
+
+.recoverForm,
+.requestForm {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  height: 100%;
+  border: 1px solid rgb(178, 181, 197);
+  border-radius: 16px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.recoverForm label,
+.requestForm label {
+  font-size: 26px;
+  border-bottom: 1px solid rgba(37, 57, 124, 0.514);
+  width: 100%;
+  padding-left: 15px;
+}
+
+.recoverForm p,
+.requestForm p {
+  padding-left: 15px;
+  margin: 10px 0;
+}
+
+.recoverForm input,
+.requestForm input {
+  all: unset;
+  width: 92%;
+  border: 1px solid #2a89cc;
+  border-radius: 14px;
+  padding: 12px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.recoverButtons {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+.cancel,
+.search,
+.create,
+.account {
+  all: unset;
+  text-align: center;
+  margin: 0 8px;
+  padding: 8px;
+  border-radius: 12px;
+  width: 100px;
+}
+
+.cancel,
+.account {
+  background-color: #E4E6EB;
+}
+
+.search,
+.create {
+  background-color: #006AB0;
+  color: white;
+}
+
+.cancel:hover,
+.account:hover {
+  background-color: #c3c7d3;
+}
+
+.search:hover,
+.create:hover {
+  background-color: #1479bd;
+}
+
+.mainRequest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.requestForm {
+  margin-top: 20px;
+}
+
+.requestForm button {
+  width: 100px;
+}
+
+/* ADMINISTRATOR - Monitor */
+
+.nav,
+.adminNav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 25px;
+}
+
+.left,
+.right,
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left div {
+  position: relative;
+}
+
+.left i {
+  font-size: 18px;
+  position: absolute;
+  margin-left: 3px;
+  color: red;
+}
+
+.icon {
+  color: #0c3653;
+}
+
+.left div,
+.right div {
+  margin-right: 32px;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.left div:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
+  background-color: gold;
+  transform-origin: left bottom;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.left div:hover:before {
+  transform-origin: right bottom;
+  transform: scaleX(1);
+}
+
+/* .active{
+    border-bottom: 5px solid gold;
+}
+ */
+
+/* INDEX */
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.top div,
+.bottom div {
+  font-size: 25px;
+  width: 100%;
+  border: 1px solid rgba(109, 108, 108, 0.37);
+  padding: 20px;
+  background-color: white;
+  border-radius: 18px;
+  text-align: center;
+  margin: 5px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.top div:hover,
+.bottom div:hover {
+  border-color: #3498db;
+}
+
+.top div:before,
+.bottom div:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 11px;
+  width: 95%;
+  height: 2.5px;
+  background-color: #3498db;
+  transform-origin: left bottom;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.top div:hover:before,
+.bottom div:hover:before {
+  transform-origin: right bottom;
+  transform: scaleX(1);
+}
+
+.number {
+  font-size: 15px;
+}
+
+.unassigned {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newTicket {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid rgba(65, 63, 63, 0.596);
+  border-radius: 16px;
+  width: 98%;
+  height: 40px;
+  margin: 2px;
+}
+
+.newTicket div {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.tickets {
+  display: flex;
+  overflow: hidden;
+}
+
+.visor {
+  width: 40%;
+  overflow: hidden;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+/* TICKET OPERADOR */
+.notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-ticket {
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.ticket {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  font-size: 23px;
+}
+
+.title,
+.subject,
+.client,
+.bi-copy {
+  margin-right: 30px;
+}
+
+.description {
+  font-size: 20px;
+  color: #3498db;
+}
+
+.associates,
+.collaborators,
+.responsible,
+.files {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.associates p:not(:first-child),
+.collaborators p:not(:first-child) {
+  margin: 0px 0px 10px 8px;
+  padding: 5px 10px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.notebook {
+  background-color: white;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 250px;
+  overflow: auto;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 90%;
+  margin: 15px 0px;
+}
+
+.navOperator {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px;
+}
+
+.privateNote {
+  margin-left: 10px;
+
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.nameOperator {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.descriptionNote {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px 15px 15px 15px;
+}
+
+.inputsNote {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.inputsNote textarea {
+  padding: 15px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.sendNote {
+  all: unset;
+  padding: 8px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  width: 10%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* CLIENT - MONITOR */
+
+.createNewTicket{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+.createTicket{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #3498db65;
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+.ticketTitle{
+  display: flex;
+  align-items: center;  
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.ticketNumber{
+  font-size: 20px;
+  margin: 1px 10px;
+}
+.subjectNewTicket, .descriptionNewTicket, .asociatesNewTicket{
+  margin-top: 15px;
+}
+.subjectNewTicket input, .descriptionNewTicket textarea, .asociatesNewTicket input{
+  all: unset;
+  background-color: #fff;
+  width: 600px;
+  padding: 12px;
+  border-radius: 12px;
+}
+.subjectNewTicket input::placeholder, .descriptionNewTicket textarea::placeholder, .asociatesNewTicket input::placeholder{
+  color: #4280adb2;
+}
+.filesNewTicket{
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.filesNewTicket div i{
+  color: white;
+  font-size: 30px;
+  margin-left: 25px;
+}
+.divButtonNT{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.buttonNewTicket{
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  padding: 12px;
+  margin-top: 18px;
+  background-color: white;
+}
+.buttonNewTicket:hover{
+  background-color: #1479bd;
+  color: white;
+}

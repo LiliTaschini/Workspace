@@ -1,0 +1,44 @@
+General -
+-Vistas ok - 
+-Se puede agregar los contactos de Desol a la página como un 
+acceso rapido a whatsapp, nuestro numero de mesa, etc
+por dudas o por algun problema con el ingreso/creacion o recuperacion
+- Funcionalidad: 
+Vista Auth
+1) Comprobaciones:
+Que se ingrese un email correcto. Sino ALERTA y no permitir acceso. 
+Que se ingrese una contraseña correcta. Sino ALERTA y no permitir acceso
+Que ingrese y que según el tipo de usuario: 
+1) Admin - redirija a las vistas del admin
+2) Cliente - redirija a las vistas del cliente
+3) Operador - redirija a las vistas del op
+Vista Recover Password
+1)Comprobaciones:
+Que se ingrese un email correcto. Sino ALERTA y no permitir buscar.
+Relacionar al mail para recuperacion de contraseñas. 
+Vista New Account
+1) Comprobación, que estén completos todos los campos obligatorios
+que el mail sea un mail correcto, que el numero telefonico sea un numero coherente y correcto con un minimo de caracteristica y un minimo de numero. 
+2) Que al presionar Inscribirse, se mande la solicitud al Admin, quien tendrá la posibilidad de aceptarlo o rechazarlo y que esos datos se agreguen a la planilla de contactos de desol. La cual será una planilla que se arme automaticamente y se pueda ver desde Admin y desde Operador.
+
+
+Administrator - 
+-Monitor (super)
+-Reportería
+-Workspace
+-Aceptar solicitudes de clientes o rechazarlas
+- Wiki - Planillas Contactos 
+
+Operator - 
+-WorkSpace
+-Monitor
+-Ticket
+-Masive logs solos. Masivo.
+-Wiki - Planillas Contactos
+
+Client
+-Workspace
+-Ticket
+-Wiki
+En la parte de configuraciones los contactos con nosotros. 
+
