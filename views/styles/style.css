@@ -13,7 +13,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background-color: #3498db34;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* GENERAL - Autenticación */
@@ -32,7 +32,6 @@ body {
   overflow: hidden;
   height: 120px;
   box-sizing: border-box;
-
 }
 
 .desolLogo {
@@ -54,7 +53,7 @@ body {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .formAuth input {
@@ -96,7 +95,6 @@ body {
 }
 
 @keyframes animatedLogo {
-
   0%,
   50% {
     bottom: 0;
@@ -109,7 +107,6 @@ body {
 }
 
 @keyframes animatedDesol {
-
   0%,
   50% {
     top: -100%;
@@ -130,7 +127,7 @@ body {
 .requestForm {
   display: flex;
   flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 50%;
   height: 100%;
   border: 1px solid rgb(178, 181, 197);
@@ -184,12 +181,12 @@ body {
 
 .cancel,
 .account {
-  background-color: #E4E6EB;
+  background-color: #e4e6eb;
 }
 
 .search,
 .create {
-  background-color: #006AB0;
+  background-color: #006ab0;
   color: white;
 }
 
@@ -256,12 +253,12 @@ body {
 .right div {
   margin-right: 32px;
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 
 .left div:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0px;
@@ -301,7 +298,7 @@ body {
   text-align: center;
   margin: 5px;
   position: relative;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 
@@ -312,7 +309,7 @@ body {
 
 .top div:before,
 .bottom div:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -373,33 +370,38 @@ body {
 }
 
 /* TICKET OPERADOR */
-.notes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .main-ticket {
-  width: 100vw;
-  height: 100vh;
-  font-family: 'Poppins', sans-serif;
-
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 135px;
+  font-family: "Poppins", sans-serif;
+  
 }
 
 .content {
+  position: sticky;
+  top: 125px;
+  margin-top: 45px;
+  margin-left: 50px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  border-radius: 12px;
   align-items: center;
-  justify-content: center;
+  width: 50%;
+  height: 75%;
   border: 1px solid black;
+  background-color: #ffffff;
 }
 
 .ticket {
   display: flex;
   justify-content: center;
   margin: 20px 0px;
+  width: 100%;
   font-size: 23px;
+  border-bottom: 1px solid #070707;
 }
 
 .title,
@@ -413,16 +415,38 @@ body {
   font-size: 20px;
   color: #3498db;
 }
-
-.associates,
+.associates {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.associate,
 .collaborators,
 .responsible,
 .files {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
-
+.files {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #bccfdb;
+  height: 10%;
+}
+.responsibles {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.responsible p {
+  margin-right: 10px;
+}
 .associates p:not(:first-child),
 .collaborators p:not(:first-child) {
   margin: 0px 0px 10px 8px;
@@ -435,14 +459,21 @@ body {
 }
 
 .notebook {
-  background-color: white;
+  background-color: rgb(240, 239, 239);
   padding: 20px;
   font-size: 18px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 400px;
+  width: 90%;
   height: 250px;
   overflow: auto;
+}
+
+.notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .note {
@@ -451,18 +482,19 @@ body {
   border: 1px solid black;
   width: 90%;
   margin: 15px 0px;
+  border-radius: 12px;
+  background-color: #dce3e7;
 }
 
 .navOperator {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 10px;
+  margin: 15px;
 }
 
 .privateNote {
   margin-left: 10px;
-
 }
 
 .options {
@@ -473,6 +505,12 @@ body {
 }
 
 .nameOperator {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+}
+
+.navClient {
   display: flex;
   justify-content: space-between;
   margin: 15px;
@@ -492,7 +530,7 @@ body {
 
 .inputsNote textarea {
   padding: 15px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .buttons {
@@ -509,67 +547,83 @@ body {
   width: 10%;
   text-align: center;
   margin-bottom: 10px;
+  border-radius: 12px;
 }
+
+.sendNote:hover {
+  background-color: #3498db;
+  color: #ffff;
+}
+
 
 /* CLIENT - MONITOR */
 
-.createNewTicket{
+.createNewTicket {
   width: 100%;
   display: flex;
   justify-content: center;
-
 }
-.createTicket{
+.createTicket {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   background-color: #3498db65;
   padding: 10px 20px;
-  width: 50%;
+  width: 40%;
   border-radius: 16px;
   margin-top: 20px;
 }
-.ticketTitle{
+.ticketTitle {
   display: flex;
-  align-items: center;  
+  align-items: center;
   border-bottom: 1px solid black;
   width: 100%;
 }
-.ticketNumber{
+.ticketNumber {
   font-size: 20px;
   margin: 1px 10px;
 }
-.subjectNewTicket, .descriptionNewTicket, .asociatesNewTicket{
+.asociatesNewTicket {
+  display: flex;
+  flex-direction: column;
+}
+.subjectNewTicket,
+.descriptionNewTicket,
+.asociatesNewTicket {
   margin-top: 15px;
 }
-.subjectNewTicket input, .descriptionNewTicket textarea, .asociatesNewTicket input{
+.subjectNewTicket input,
+.descriptionNewTicket textarea,
+.asociatesNewTicket input {
   all: unset;
   background-color: #fff;
-  width: 600px;
+  width: 700px;
   padding: 12px;
   border-radius: 12px;
 }
-.subjectNewTicket input::placeholder, .descriptionNewTicket textarea::placeholder, .asociatesNewTicket input::placeholder{
+.subjectNewTicket input::placeholder,
+.descriptionNewTicket textarea::placeholder,
+.asociatesNewTicket input::placeholder {
   color: #4280adb2;
 }
-.filesNewTicket{
+.filesNewTicket {
   display: flex;
   align-items: center;
   margin-top: 30px;
 }
-.filesNewTicket div i{
+.filesNewTicket div i {
   color: white;
   font-size: 30px;
   margin-left: 25px;
 }
-.divButtonNT{
+.divButtonNT {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-.buttonNewTicket{
+.buttonNewTicket {
   display: flex;
   justify-content: center;
   width: 200px;
@@ -577,7 +631,7 @@ body {
   margin-top: 18px;
   background-color: white;
 }
-.buttonNewTicket:hover{
+.buttonNewTicket:hover {
   background-color: #1479bd;
   color: white;
 }
