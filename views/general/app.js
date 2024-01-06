@@ -1,20 +1,23 @@
-function iniciarResizing(e) {
-    e.preventDefault();
+const handle = document.getElementById('handle');
+const leftDiv = document.getElementById('left');
+const rightDiv = document.getElementById('right');
 
-    let aside = document.getElementById('miAside');
-    let offsetX = e.clientX;
-    let width = aside.offsetWidth;
+let isDragging = false;
 
-    function redimensionar(e) {
-        let nuevoAncho = width - (e.clientX - offsetX);
-        aside.style.width = nuevoAncho + 'px';
+handle.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+        document.removeEventListener('mousemove', handleMouseMove);
+    });
+});
+
+function handleMouseMove(e) {
+    if (isDragging) {
+        const containerRect = document.getElementById('container').getBoundingClientRect();
+        const percent = (e.clientX - containerRect.left) / containerRect.width;
+        leftDiv.style.flex = percent;
+        rightDiv.style.flex = 1 - percent;
     }
-
-    function detenerResizing() {
-        document.removeEventListener('mousemove', redimensionar);
-        document.removeEventListener('mouseup', detenerResizing);
-    }
-
-    document.addEventListener('mousemove', redimensionar);
-    document.addEventListener('mouseup', detenerResizing);
 }
