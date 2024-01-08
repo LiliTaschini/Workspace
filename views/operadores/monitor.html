@@ -39,60 +39,105 @@
         </div>
     </nav>
     <main class="main">
-        <div class="top">
-            <div>
-                <p>Sin Asignar : 2</p>
-            </div>
-            <div>
-                <p>En Tiempo : 5</p>
+        <div class="monitor__filters">
 
+            <div class="top">
+                <div>
+                    <p>Sin Asignar : 2</p>
+                </div>
+                <div>
+                    <p>En Tiempo : 5</p>
+        
+                </div>
+                <div>
+                    <p>Vencidos / Prioridad : 1</p>
+                </div>
             </div>
-            <div>
-                <p>Vencidos / Prioridad : 1</p>
-            </div>
-        </div>
-        <div class="bottom">
-            <div>
-                <p>Mis Asignados : 1</p>
-            </div>
-            <div>
-                <p>Total sin Masivos : 8</p>
-            </div>
-            <div>
-                <p>Total con Masivos : 10</p>
+            <div class="bottom">
+                <div>
+                    <p>Mis Asignados : 1</p>
+                </div>
+                <div>
+                    <p>Total sin Masivos : 8</p>
+                </div>
+                <div>
+                    <p>Total con Masivos : 10</p>
+                </div>
             </div>
         </div>
 
         <div class="tickets" id="container">
 
             <div class="resizable" id="left">
-                <div>
-                    <div>Ticket #45000</div>
-                    <div>MACROCEL</div>
-                    <div>Alejandra Marianelli</div>
-                    <div>Petición usuarios FortiClient</div>
-                    <div>Sin Asignar</div>
-                    <!-- Después cambia por quien esté en Mesa. Botón - Por Ejemplo Lilian Taschini -->
-                    <div>Estado</div> <!-- Nuevos estados quizás relacionados a una prioridad. Discutible -->
-                    <div> Duplicado <i class="bi bi-infinity"></i> </div>
-                    <div> Derivar <i class="bi bi-arrow-right-circle"></i> </div>
-                    <div> Seleccionar <i class="bi bi-pin"></i> </div>
-                    <div>Copiar</div>
-                    <!-- Para seleccionado <i class="bi bi-pin-angle-fill"></i> -->
-                    <div> Ver <i class="bi bi-pen"></i></div>
+                <div class="newTicket">
+                    <div class="ticket__title">
+                        <p>Ticket #45000</p>
+                        <p>MACROCEL</p>
+                        <p>Alejandra Marianelli</p>
+                        <p>Petición usuarios FortiClient</p>
+                        <i class="bi bi-copy"></i>
+                    </div>
+    
+                    <div class="ticket__option">
+                        <div>Sin Asignar</div>
+                        <!-- Después cambia por quien esté en Mesa. Botón - Por Ejemplo Lilian Taschini -->
+                        <div>Estado</div> <!-- Nuevos estados quizás relacionados a una prioridad. Discutible -->
+                        <div> Duplicado <i class="bi bi-infinity"></i> </div>
+                        <div> Derivar <i class="bi bi-arrow-right-circle"></i> </div>
+                        <div> Seleccionar <i class="bi bi-pin"></i> </div>
+                        <!-- Para seleccionado <i class="bi bi-pin-angle-fill"></i> -->
+                        <div> Ver <i class="bi bi-pen"></i></div>
+                    </div>
+    
+                </div>
+                <div class="newTicket">
+                    <div class="ticket__title">
+                        <p>Ticket #45000</p>
+                        <p>MACROCEL</p>
+                        <p>Alejandra Marianelli</p>
+                        <p>Petición usuarios FortiClient</p>
+                        <i class="bi bi-copy"></i>
+                    </div>
+    
+                    <div class="ticket__option">
+                        <div>Sin Asignar</div>
+                        <!-- Después cambia por quien esté en Mesa. Botón - Por Ejemplo Lilian Taschini -->
+                        <div>Estado</div> <!-- Nuevos estados quizás relacionados a una prioridad. Discutible -->
+                        <div> Duplicado <i class="bi bi-infinity"></i> </div>
+                        <div> Derivar <i class="bi bi-arrow-right-circle"></i> </div>
+                        <div> Seleccionar <i class="bi bi-pin"></i> </div>
+                        <!-- Para seleccionado <i class="bi bi-pin-angle-fill"></i> -->
+                        <div> Ver <i class="bi bi-pen"></i></div>
+                    </div>
+    
+                </div>
+                <div class="newTicket">
+                    <div class="ticket__title">
+                        <p>Ticket #45000</p>
+                        <p>MACROCEL</p>
+                        <p>Alejandra Marianelli</p>
+                        <p>Petición usuarios FortiClient</p>
+                        <i class="bi bi-copy"></i>
+                    </div>
+    
+                    <div class="ticket__option">
+                        <div>Sin Asignar</div>
+                        <!-- Después cambia por quien esté en Mesa. Botón - Por Ejemplo Lilian Taschini -->
+                        <div>Estado</div> <!-- Nuevos estados quizás relacionados a una prioridad. Discutible -->
+                        <div> Duplicado <i class="bi bi-infinity"></i> </div>
+                        <div> Derivar <i class="bi bi-arrow-right-circle"></i> </div>
+                        <div> Seleccionar <i class="bi bi-pin"></i> </div>
+                        <!-- Para seleccionado <i class="bi bi-pin-angle-fill"></i> -->
+                        <div> Ver <i class="bi bi-pen"></i></div>
+                    </div>
+    
                 </div>
             </div>
 
             
             <div class="resizable" id="right">
                 <button class="toggle__resize" id="handle"></button>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error consectetur, veritatis molestias
-                    optio quibusdam, in quod nemo ab dolor quas temporibus dolore. Aliquam suscipit asperiores quasi
-                    laboriosam enim. Veniam, culpa?
-                    Saepe eius ut hic accusantium voluptas dolor voluptates nulla quia non? Tempora ut illo mollitia
-                    unde qui sapiente repellat perferendis, dolore temporibus recusandae, quasi eius iusto blanditiis
-                    nemo quas tenetur.
-                </p>
+                <p><i class="bi bi-arrow-left-short"></i> Selecciona un ticket para visualizarlo</p>
             </div>
 
         </div>
