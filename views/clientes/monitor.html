@@ -26,71 +26,99 @@
             <div>Wiki</div>
         </div>
         <div class="right">
-            <!--  <div>Sonidos <i class="bi bi-bell-slash icon"></i></div> -->
+            <!--  <div><i class="bi bi-bell-slash icon"></i></div> -->
             <!-- <i class="bi bi-exclamation-circle"></i> icono de afirmacion -->
             <!-- <i class="bi bi-bell-fill"></i>  Para cuando este ON  -->
             <!-- <i class="bi bi-cup-hot-fill"></i> Para cuando este ON -->
-            <!--  <div>Dark Mode <i class="bi bi-brightness-high icon"></i></div> -->
+            <!--  <div><i class="bi bi-brightness-high icon"></i></div> -->
             <!-- <i class="bi bi-moon-stars"></i> Para cuando esté ON -->
-            <div><i class="bi bi-person-fill icon"></i></div>
+            <div class="icon" id="personIcon">
+                <i class="bi bi-person-fill"></i>
+            </div>
+
+            <div class="internNav " id="internNav">
+                <div><i class="bi bi-bell-slash icon"></i></div>
+                <div><i class="bi bi-brightness-high icon"></i></div>
+                <div><i class="bi bi-gear gearButton" onclick="toggleGear()"></i></div>
+            </div>
+
             <!-- <i class="bi bi-person-circle"></i> Para cuando se esté configurando -->
+        </div>
+        <div class="gearSection">
+            <div class="gears">
+                <div class="profileAvatar">
+
+                </div>
+                <p class="titleGears" id="username"> <!-- Traer sólo nombre -->
+                    Hola, Lili
+                </p>
+                <p>
+                <p class="subtitleGears">
+                    Vamos a configurar tu cuenta
+                </p>
+
+                <div class="buttonsGears">
+                    <div class="aliasGears">
+                        <input type="text" title="Presiona Enter" placeholder="Insertar Alias" class="inputAlias" onkeyup="updateTitle(event)">
+                    </div>
+                    <div class="buttonsG">
+                        <label for="files">Nuevo Avatar</label>
+                        <input type="file" id="files">
+                    </div>
+                    <div class="buttonsG">
+                        <label for="sound">Nuevo Sonido</label>
+                        <input type="file" id="sound">
+                    </div>
+                </div>
+
+                
+            </div>
         </div>
     </nav>
     <main class="main">
         <div class="top">
-            <div>
-                <p>NUEVO TICKET</p>
-            </div>
-            <div>
-                <p>ASOCIADOS A MÍ</p>
-
-            </div>
-            <div>
-                <p>TODOS</p>
-            </div>
+            <p onclick="toggleNewTicketSection()" class="newTicketButton">NUEVO TICKET</p>
+            <p>ASOCIADOS A MÍ</p>
+            <p>TODOS</p>
         </div>
         <div class="bottom">
-            <div>
-                <p>CREADOS POR MÍ</p>
-            </div>
-            <div>
-                <p>NUEVAS RESPUESTAS</p>
-            </div>
-            <div>
-                <p>TICKETS ABIERTOS</p>
-            </div>
+            <p>CREADOS POR MÍ</p>
+            <p>NUEVAS RESPUESTAS</p>
+            <p>TICKETS ABIERTOS</p>
         </div>
 
-        <div class="createNewTicket">
-                <div class="createTicket">
-                   <div class="ticketTitle">
-                    <div class="ticketNumber">Ticket #45000</div> <!-- se genera automáticamente -->
-                    <div>Alejandra Marianelli</div> <!-- Lo toma del usuario -->
-                   </div>
-                    <div class="subjectNewTicket"> 
-                    <input type="text" name="" id="" placeholder="ASUNTO">    
-                    </div>
-                    <div class="descriptionNewTicket"><textarea name="" id="" cols="30" rows="10" placeholder="Describa la situación:"></textarea>
-                    </div>   
-                    <div class="asociatesNewTicket">
-                        <p>Asociados: </p>
-                        <input type="text" name="" id="" placeholder="Agregue más asociados con @">
-                    </div>
-                    <div class="filesNewTicket">
-                        Adjuntar archivos o imágenes:
-                        <div> <i class="bi bi-plus-square-fill"></i> </div>
-                    </div>                 
-                   
-                    <div class="divButtonNT">
-                        <div class="buttonNewTicket">CREAR TICKET</div>
-                    </div>
-
+        <div class="createNewTicket" id="createNewTicketSection">
+            <div class="createTicket">
+                <div class="ticketTitle">
+                    <p class="ticketNumber">Ticket #45000</p> <!-- se genera automáticamente -->
+                    <p>Alejandra Marianelli</p> <!-- Lo toma del usuario -->
                 </div>
+                <div class="subjectNewTicket">
+                    <input type="text" name="" id="" placeholder="ASUNTO">
+                </div>
+                <div class="descriptionNewTicket"><textarea name="" id="" cols="30" rows="10"
+                        placeholder="Describa la situación:"></textarea>
+                </div>
+                <div class="asociatesNewTicket">
+                    <p>Asociados: </p>
+                    <input type="text" name="" id="" placeholder="Agregue más asociados con @">
+                </div>
+                <div class="filesNewTicket">
+                    Adjuntar archivos o imágenes:
+                    <i class="bi bi-plus-square-fill"></i>
+                </div>
+
+                <div class="divButtonNT">
+                    <div class="buttonNewTicket">CREAR TICKET</div>
+                    <i onclick="closeNewTicketSection()" class="bi bi-x-circle closeButton"></i>
+                </div>
+
+            </div>
         </div>
 
     </main>
 
-    <script src="../general/app.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
