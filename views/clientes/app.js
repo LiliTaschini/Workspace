@@ -51,6 +51,10 @@ function toggleGear() {
   gearSection.classList.toggle("show");
 }
 
+function closeGear() {
+  gearSection.classList.remove("show");
+}
+
 /* INTERNAV */
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -69,12 +73,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/*  */
+/* Updatea Título en configuraciones */
+
 function updateTitle(event) {
-  if (event.key === "Enter") {  
+  if (event.key === "Enter") {
     if (inputAlias.value.trim() !== "") {
       titleGears.textContent = "Hola, " + inputAlias.value;
       inputAlias.value = "";
     }
   }
+}
+
+/* FETCH  */
+
+function traerPersonas() {
+  fetch("http://127.0.0.1:5501/data/people.json")
+  .then((res) => res.json())
+  .then((data) => {
+    ordenarRespuestas(data)
+  });
+}
+
+function traerTickets() {
+  fetch("http://127.0.0.1:5501/data/data.json")
+    .then((res) => res.json())
+    .then((data) => console.log(data));
+}
+
+traerTickets();
+traerPersonas();
+
+function ordenarRespuestas(persona) {
+  console.log(persona.personas[0].rol)
 }
