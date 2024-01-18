@@ -304,8 +304,8 @@ main {
   height: 35%;
 }
 
-.top p,
-.bottom p {
+.top div,
+.bottom div {
   font-size: 25px;
   width: 100%;
   border: 1px solid rgba(109, 108, 108, 0.37);
