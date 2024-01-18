@@ -1,0 +1,34 @@
+{
+  "personas": [
+    {
+      "nombre": "Lilian",
+      "apellido": "Taschini",
+      "rol": "operador",
+      "telefono": "2664855030",
+      "alias": "Lili",
+      "foto": "lili_foto.jpg",
+      "sonido": "lili.mp3",
+      "mail": "lilian@example.com"
+    },
+    {
+      "nombre": "Marisel",
+      "apellido": "Campos",
+      "rol": "cliente",
+      "telefono": "+987654321",
+      "alias": "mary",
+      "foto": "maria_foto.jpg",
+      "sonido": "maria_voz.mp3",
+      "mail": "maria.campos@example.com"
+    },
+    {
+      "nombre": "Enzo",
+      "apellido": "Princippe",
+      "rol": "administrador",
+      "telefono": "+111223344",
+      "alias": "Enzo",
+      "foto": "enzo_foto.jpg",
+      "sonido": "enzo_voz.mp3",
+      "mail": "enzo@example.com"
+    }
+  ]
+}

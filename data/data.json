@@ -1,0 +1,82 @@
+{
+  "tickets": [
+    {
+      "numero_de_ticket": "2586",
+      "responsable": "Lilian Taschini",
+      "colaboradores": [
+        "Enzo Princippe",
+        "Facundo Altamirano"
+      ],
+      "asunto": "Problema con la aplicación",
+      "descripcion": "El cliente informa un error al intentar iniciar sesión.",
+      "cliente": "Montironi",
+      "asociados": [
+        "Departamento de Desarrollo",
+        "Soporte Técnico"
+      ],
+      "archivos_adjuntos": [
+        "archivo1.jpg",
+        "documento.pdf"
+      ],
+      "comentarios": []
+    },
+    {
+      "numero_de_ticket": "2587",
+      "responsable": "Facundo Altamirano",
+      "colaboradores": [
+        "Abril Coaloa",
+        "Enzo Princippe"
+      ],
+      "asunto": "Consulta sobre facturación",
+      "descripcion": "El cliente tiene preguntas acerca de su factura mensual.",
+      "cliente": "YPF Gas",
+      "asociados": [
+        "Departamento Financiero",
+        "Servicio al Cliente"
+      ],
+      "archivos_adjuntos": [
+        "contrato.pdf"
+      ],
+      "comentarios": {
+        "1": {
+          "nombreApellido": "Lilian Taschini",
+          "mensaje": "Hola Marisel",
+          "rolActual": "operador"
+        },
+        "2": {
+          "nombreApellido": "Marisel Campos",
+          "mensaje": "Hola Lilian",
+          "rolActual": "cliente"
+        },
+        "3": {
+          "nombreApellido": "Lilian Taschini",
+          "mensaje": "¿Que necesitas?",
+          "rolActual": "operador"
+        },
+        "4": {
+          "nombreApellido": "Marisel Campos",
+          "mensaje": "Vemos que ashKJHDAKSHDKHDKLAHDKHDAKHDKHSDLHDHDALHD",
+          "rolActual": "cliente"
+        }
+      }
+    },
+    {
+      "numero_de_ticket": "2588",
+      "responsable": "Abril Coaloa",
+      "colaboradores": [
+        "Lili Taschini"
+      ],
+      "asunto": "Solicitud de nuevas funciones",
+      "descripcion": "El cliente solicita la implementación de nuevas características en la aplicación.",
+      "cliente": "SMSV",
+      "asociados": [
+        "Departamento de Desarrollo"
+      ],
+      "archivos_adjuntos": [
+        "ideas.txt",
+        "capturas_de_pantalla.zip"
+      ],
+      "comentarios": []
+    }
+  ]
+}
