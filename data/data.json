@@ -41,7 +41,10 @@
         "1": {
           "nombreApellido": "Lilian Taschini",
           "mensaje": "Hola Marisel",
-          "rolActual": "operador"
+          "rolActual": "operador",
+          "fecha": "",
+          "hora":" "
+
         },
         "2": {
           "nombreApellido": "Marisel Campos",
