@@ -11,6 +11,7 @@ a {
 
 body {
   width: 100vw;
+  height: 100vh;
   overflow-x: hidden;
   background-color: #3498db34;
   font-family: "Poppins", sans-serif;
@@ -222,6 +223,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  height: 10%;
   padding: 15px 15px 0px 15px;
   margin-bottom: 25px;
 }
@@ -239,7 +241,6 @@ body {
   position: relative;
 }
 
-
 .icon {
   color: #0c3653;
   cursor: pointer;
@@ -253,14 +254,14 @@ body {
   cursor: pointer;
 }
 
-.internNav{
+.internNav {
   display: none;
   position: absolute;
   top: 2;
   right: 2%;
   flex-direction: row;
 }
-.internNav i{
+.internNav i {
   color: #348ac4a1;
 }
 
@@ -395,7 +396,7 @@ body {
   flex-direction: column;
   border-radius: 12px;
   align-items: center;
-  width: 50%;
+  width: 40%;
   height: 75%;
   border: 1px solid black;
   background-color: #ffffff;
@@ -480,23 +481,84 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  width: 60%;
 }
-
+.contentNotes {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
 .note {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
-  width: 90%;
+  width: 70%;
   margin: 15px 0px;
   border-radius: 12px;
   background-color: #dce3e7;
 }
 
-.navOperator {
+.noteOperator {
+  align-self: flex-start;
+}
+
+.noteClient {
+  align-self: flex-end;
+  background-color: #9eaac9;
+}
+
+.noteInput {
+  width: 90%;
+  height: 200px;
+}
+
+.navOperator,
+.navClient {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin: 15px;
+}
+.navInput {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 15px 0 15px;
+}
+
+.sendMessage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  width: 100%;
+}
+.sendMessage textarea {
+  width: 85%;
+  height: 80px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 18px;
+}
+.sendMessage button {
+  all: unset;
+  width: 50px;
+  border-radius: 100%;
+  height: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 25px;
+  transform: rotate(40deg);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  background-color: #006ab0;
+  color: white;
+}
+.sendMessage button:hover {
+  box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.507);
+}
+
+.sendMessage button i {
+  transform: translateX(-2px);
 }
 
 .privateNote {
@@ -510,18 +572,6 @@ body {
   width: 300px;
 }
 
-.nameOperator {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-}
-
-.navClient {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-}
-
 .descriptionNote {
   display: flex;
   justify-content: flex-start;
@@ -529,14 +579,12 @@ body {
 }
 
 .inputsNote {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 15px;
 }
-
-.inputsNote textarea {
-  padding: 15px;
-  font-size: 18px;
+.inputsNote label {
+  margin: 10px 0 0 15px;
 }
 
 .buttons {
@@ -544,6 +592,7 @@ body {
   justify-content: flex-end;
   margin-right: 20px;
 }
+/* REVISAR */
 
 .sendNote {
   all: unset;
@@ -595,7 +644,8 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#createNewTicketSection, .gearSection {
+#createNewTicketSection,
+.gearSection {
   display: none;
   position: fixed;
   top: 0;
@@ -607,8 +657,8 @@ body {
   z-index: 1;
 }
 
-
-#createNewTicketSection.show, .gearSection.show {
+#createNewTicketSection.show,
+.gearSection.show {
   display: block;
 }
 
@@ -682,7 +732,7 @@ body {
   color: white;
 }
 
-.gears{
+.gears {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -699,7 +749,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.titleGears{
+.titleGears {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid black;
@@ -708,21 +758,21 @@ body {
   margin-top: 10px;
 }
 
-.subtitleGears{
+.subtitleGears {
   font-size: 18px;
 }
-.aliasGears{
+.aliasGears {
   display: flex;
   align-items: center;
 }
-.buttonsGears{
+.buttonsGears {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.inputAlias{
+.inputAlias {
   all: unset;
   margin-left: 10px;
   font-size: 18px;
@@ -735,15 +785,14 @@ body {
   margin-right: 10px;
   text-align: center;
 }
-.aliasGears i{
+.aliasGears i {
   color: green;
   font-size: 30px;
-  
 }
-.buttonsG input{
+.buttonsG input {
   display: none;
 }
-.buttonsG label{
+.buttonsG label {
   display: block;
   font-size: 18px;
   margin-bottom: 5px;
@@ -757,7 +806,7 @@ body {
   text-align: center;
   display: block;
 }
-.profileAvatar{
+.profileAvatar {
   border: 1px solid #050505;
   width: 50%;
   height: 40%;
@@ -766,4 +815,142 @@ body {
   background-size: cover;
   background-position: center;
   border-radius: 50%;
+}
+
+/* Workspace */
+.main-workspace {
+  height: 80%;
+  width: 100%;
+}
+.sub__menu {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  gap: 20px;
+  color: white;
+  font-size: 23px;
+  background-color: #386280;
+}
+.sub__menu a {
+  cursor: pointer;
+}
+
+/* Workspace | Filtros */
+.filter__section, .masive__section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.search__filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  color: white;
+  font-size: 18px;
+  height: 100%;
+  background-color: #386280;
+  border-right: 1px solid;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 4px 8px #ffffff;
+}
+.first__row {
+  display: flex;
+  gap: 100px;
+  margin: 50px 0px;
+}
+.search__status {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.search__assigned__to {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.search__status label input,
+.search__assigned__to label input {
+  margin-right: 10px;
+}
+.search__middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.search__middle input,
+.search__middle select {
+  width: 250px;
+  height: 30px;
+  padding-left: 5px;
+  border-radius: 6px;
+}
+
+.search__client,
+.search__root__cause,
+.search__subject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 2px;
+}
+
+.search__dates {
+  display: flex;
+  gap: 100px;
+}
+.search__dates input {
+  text-align: center;
+}
+
+.search__title {
+  color: #1a9fff;
+  font-size: 15px;
+}
+.search__result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #050505;
+  width: 70%;
+  height: 100%;
+}
+#filterIconContainer{
+  position: absolute;
+  right: 25px;
+  top: 22%;
+}
+#filterIcon{
+  font-size: 25px;
+}
+
+/* Workspace | Masivos */
+.masive__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    color: black;
+    font-size: 18px;
+    height: 100%;
+    background-color: white;
+}
+.uptime__results{
+  width: 70%;
+  height: 100%;
+}
+.masive{
+  width: 400px;
+  height: 100px;
+  background-color: #3f789e;
+  margin-top: 10px;
+}
+.buttons button{
+  all: unset;
 }

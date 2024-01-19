@@ -106,3 +106,5 @@ traerPersonas();
 function ordenarRespuestas(persona) {
   console.log(persona.personas[0].rol)
 }
+
+/*  */

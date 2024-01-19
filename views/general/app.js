@@ -18,3 +18,17 @@ function iniciarResizing(e) {
     document.addEventListener('mousemove', redimensionar);
     document.addEventListener('mouseup', detenerResizing);
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    let filterIcon = document.getElementById("filterIcon");
+    let filterContainer = document.querySelector(".search__filters");
+    let searchResult = document.querySelector(".search__result"); 
+
+    
+    filterIcon.addEventListener("click", function () {        
+        let isFiltersVisible = filterContainer.style.display !== "none";
+
+        filterContainer.style.display = isFiltersVisible ? "none" : "flex";
+        searchResult.style.width = isFiltersVisible ? "100%" : "70%"
+    });
+});
