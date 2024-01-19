@@ -11,7 +11,7 @@ a {
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
   background-color: #3498db34;
   font-family: "Poppins", sans-serif;
@@ -302,12 +302,24 @@ main {
 
 .monitor__filters {
   height: 35%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top, .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top div,
 .bottom div {
   font-size: 25px;
-  width: 100%;
+  width: 32%;
   border: 1px solid rgba(109, 108, 108, 0.37);
   padding: 20px;
   background-color: white;
@@ -418,10 +430,12 @@ main {
 }
 
 #right {
+  padding-top: 40px;
   padding-left: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
 #left {
@@ -465,6 +479,15 @@ main {
   height: 75%;
   border: 1px solid black;
   background-color: #ffffff;
+}
+
+.content__monitor {
+  width: 100%;
+  padding: 100px 25px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ticket {
